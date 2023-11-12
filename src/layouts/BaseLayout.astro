@@ -79,20 +79,17 @@ if (title != SITE_TITLE) {
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- Dark Mode -->
+    <script is:inline>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
-  <body>
+  <body class="dark:bg-slate-800 dark:text-white">
     <slot />
   </body>
 </html>
-
-<style>
-  html.dark {
-    background-color: #0d0950;
-    color: #fff;
-  }
-
-  .dark .nav-links a {
-    color: #fff;
-  }
-</style>
-
