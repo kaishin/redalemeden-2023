@@ -1,18 +1,25 @@
 ---
-import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header class="md:row-start-1 md:col-start-1" >
-  <a href="/">
-    <div class="avatar-placeholder" />
-    <img src="/author-photo.jpg" alt="Reda Lemeden" />
-    <h1>Reda Lemeden</h1>
-    <p>
-      Independent <em>Designer</em>, <em>Developer</em>, and <em>Writer</em>
+<header class="md:row-start-1 md:col-start-1 sm:pt-8" >
+  <a href="/" class="text-center block hover:scale-95 transition-transform motion-reduce:hover:transform-none">
+    <img src="/author-photo-flipped.jpg" alt="Reda Lemeden" class="mask-sakigake w-32 mx-auto"/>
+    <h1 class="uppercase font-bold tracking-widest text-l pb-1">Reda Lemeden</h1>
+    <p class="px-8 text-sm tracking-wide text-stone-400 dark:text-slate-500">
+      Indie Developer & Designer
     </p>
   </a>
-  <ThemeIcon />
-  <div>
-    <!-- TODO: Add vector sakigake logo -->
-  </div>
+
+  <hr class="my-12 mx-16 block h-px border-0 bg-stone-300 dark:bg-slate-600 opacity-60">
 </header>
+
+<style>
+  @tailwind utilities;
+
+  @layer utilities {
+    .mask-sakigake {
+      mask-image: url(/logomark.svg);
+      mask-repeat: no-repeat;
+    }
+  }
+</style>

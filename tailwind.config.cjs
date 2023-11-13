@@ -10,10 +10,16 @@ module.exports = {
       gridTemplateColumns: {
         "main": `${maxSideBarWidth} 1fr`,
       },
+      gridTemplateRows: {
+        "main": "auto 1fr auto",
+      },
+      colors: {
+        "cream": "#fffbf5",
+        "asphalt": "#191f2d",
+        "banana": "#ffd080",
+        "amethyst": "#4a20ac",
+      }
     },
-    colors: {
-      "cream": "#fffbf5",
-    }
   },
   plugins: [
     require("@tailwindcss/typography")
