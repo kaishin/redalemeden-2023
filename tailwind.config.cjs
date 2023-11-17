@@ -1,4 +1,5 @@
 /** @type {import("tailwindcss").Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const maxSideBarWidth = "18rem";
 
@@ -18,7 +19,11 @@ module.exports = {
         "asphalt": "#191f2d",
         "banana": "#ffd080",
         "amethyst": "#4a20ac",
-      }
+        "ash": "#7b94ce"
+      },
+      fontFamily: {
+        sans: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [

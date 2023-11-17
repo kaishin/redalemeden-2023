@@ -35,12 +35,15 @@
       }
 
       localStorage.removeItem("theme");
+      document.getElementById("themeSelect").value = "system";
     } else if (theme === "light") {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      document.getElementById("themeSelect").value = "light";
     } else if (theme === "dark") {
       element.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      document.getElementById("themeSelect").value = "dark";
     }
   }
 
