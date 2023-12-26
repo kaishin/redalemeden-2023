@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         "main": `${maxSideBarWidth} 1fr`,
+        "projects": "repeat(auto-fill,minmax(14rem,1fr))"
       },
       gridTemplateRows: {
         "main": "auto 1fr auto",
