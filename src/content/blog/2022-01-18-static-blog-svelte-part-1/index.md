@@ -3,7 +3,7 @@ pubDate: Jan 18 2022
 title: "Making A Static Blog with Svelte: Part 1"
 audience: "Web and front-end developers or people interested in the topic"
 tags:
-  - Tutorial
+  - Guide
   - Web
 ---
 
