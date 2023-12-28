@@ -8,4 +8,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind()],
+  redirects: {
+    "/blog/2020/this-week-i-learned*": "/blog",
+  }
 });
