@@ -1,9 +1,9 @@
 ---
 pubDate: Mar 07 2015
-title: "IPinator"
+title: "Announcing IPinator"
 tags:
   - Announcement
-audience: "people who have been following my work as a Mac developer"
+audience: "people who have been following my macOS-related work"
 ---
 
 I'm pleased to announce that [IPinator](http://ipinator.kaishin.co) is *finally*

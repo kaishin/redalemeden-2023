@@ -4,7 +4,6 @@ title: "Debugging SwiftUI: Trials and Tribulations"
 audience: people interested SwiftUI or UI programming in general
 tags:
   - Programming
-draft: false
 ---
 
 I have been using [SwiftUI](https://developer.apple.com/xcode/swiftui/) since

@@ -4,7 +4,6 @@ pubDate: Feb 21 2021
 audience: Combine developers or people curious about how I spend my Sunday mornings
 tags:
   - Programming
-draft: false
 ---
 
 If you are using Combine's `Just`, `Fail`, or `Result.publisher` as much as I do

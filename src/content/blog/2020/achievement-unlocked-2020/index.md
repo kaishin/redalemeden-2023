@@ -5,7 +5,6 @@ audience: people who have been following my work and/or are interested in
   independent blogging
 tags:
   - Journal
-draft: false
 ---
 
 As challenging and anomalous as this year has been, I sought to make the best
