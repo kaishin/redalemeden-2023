@@ -21,7 +21,7 @@ const posts = (await getCollection('blog')).sort(
           <li class="mb-10">
             <a href={`/blog/${post.slug}/`}>
               <h3 class="font-medium text-2xl max-w-80">{post.data.title}</h3>
-              <p class="text-sm font-semibold leading-normal opacity-80 tracking-wider uppercase mt-1">
+              <p class="text-sm text-purple-500 dark:text-banana font-semibold leading-normal tracking-wider uppercase mt-1">
                 <FormattedDate date={post.data.pubDate} />
               </p>
               {post.data.tags && post.data.tags.length > 0 && (
