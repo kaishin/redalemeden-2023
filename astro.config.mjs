@@ -20,17 +20,9 @@ export default defineConfig({
     "blog/3": "/blog",
     "blog/4": "/blog",
     "blog/5": "/blog",
-    "/blog/2021/wwdc-21-day-2-session-notes": {
-      destination: "/blog/2021/wwdc-21-session-notes/",
-      status: 301,
-    },
-    "/blog/2021/wwdc-21-day-3-session-notes": {
-      destination: "/blog/2021/wwdc-21-session-notes/",
-      status: 301,
-    },
-    "/blog/2021/wwdc-21-day-4-5-session-notes": {
-      destination: "/blog/2021/wwdc-21-session-notes/",
-      status: 301,
-    },
+    "/blog/2021/wwdc-21-day-2-session-notes": "/blog/2021/wwdc-21-session-notes/",
+    "/blog/2021/wwdc-21-day-3-session-notes": "/blog/2021/wwdc-21-session-notes/",
+    "/blog/2021/wwdc-21-day-4-5-session-notes": "/blog/2021/wwdc-21-session-notes/",
+    "/microblog/[...slug]": "/microblog",
   }
 });
