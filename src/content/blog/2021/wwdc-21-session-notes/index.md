@@ -1,6 +1,6 @@
 ---
 pubDate: Jun 13 2021
-title: "WWDC 21: Session Notes"
+title: "WWDC 2021: Session Notes"
 audience: "my future self. Apple platform developers"
 tags:
   - Programming

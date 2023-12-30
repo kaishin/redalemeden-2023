@@ -1,5 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 import defaultTheme from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
 
 const maxSideBarWidth = "18rem";
 
@@ -28,6 +29,13 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/typography")
+    require("@tailwindcss/typography"),
+    // https://aaronfrancis.com/2023/tailwind-typography-inline-code-only
+    plugin(function ({addVariant}) {
+      addVariant( 
+        'prose-inline-code',
+        '&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *))'
+      );
+    })
   ],
 }

@@ -8,12 +8,18 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind()],
-  redirects: {
-    "blog/[...number]": "/blog",
-    "/blog/2020/this-week-i-learned-[...number]": {
-      destination: "/blog",
-      status: 301,
+  markdown: {
+    shikiConfig: {
+      theme: "dracula",
+      wrap: true,
     },
+  },
+  redirects: {
+    "blog/1": "/blog",
+    "blog/2": "/blog",
+    "blog/3": "/blog",
+    "blog/4": "/blog",
+    "blog/5": "/blog",
     "/blog/2021/wwdc-21-day-2-session-notes": {
       destination: "/blog/2021/wwdc-21-session-notes/",
       status: 301,
