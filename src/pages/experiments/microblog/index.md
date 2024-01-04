@@ -3,7 +3,7 @@ layout: "@layouts/NavigationLayout.astro"
 title: "Microblog"
 ---
 
-# Microblog
+## Microblog
 
 An experiment where, for almost a full year, I published micro posts directly on the site. Here are all of them in reverse chronological order.
 
@@ -27,7 +27,7 @@ highlights areas that can be refactored out to streamline the codebase even furt
 <time datetime="2021-07-25T20:31+00:00" class="font-semibold text-2xl" id="jul-25-2021"><a href="#jul-25-2021" class="no-underline">#</a> July 25, 2021</time>
 
 I really want to keep liking [Gatsby.js](https://www.gatsbyjs.com), but the distasteful npm ecosystem,
-the forced client-side JavaScript, and my complete lack of use for client-side hydration—the 
+the forced client-side JavaScript, and my complete lack of use for client-side hydration—the
 process of turning static pages into interactive ones using JS—have been standing in the way as of late.
 
 <time datetime="2021-06-22T20:42+00:00" class="font-semibold text-2xl" id="jun-22-2021"><a href="#jun-22-2021" class="no-underline">#</a> June 22, 2021</time>
@@ -49,7 +49,7 @@ This easter break I built my first command line utility in Swift using the [Argu
 
 <time datetime="2021-03-31T22:46+02:00" class="font-semibold text-2xl" id="mar-31-2021"><a href="#mar-31-2021" class="no-underline">#</a> March 31, 2021</time>
 
-Open-source maintainers: README files *should not* replace proper reference documentation.
+Open-source maintainers: README files _should not_ replace proper reference documentation.
 
 <time datetime="2021-03-29T20:42+02:00" class="font-semibold text-2xl" id="mar-29-2021"><a href="#mar-29-2021" class="no-underline">#</a> March 29, 2021</time>
 
@@ -73,7 +73,7 @@ With the Gatsby 3.0 migration complete, I took some time to try out [Gatsby Clou
 
 Sylvain Kerkour [writes](https://kerkour.com/blog/the-biggest-threat-to-rust-sustainability/) about the high churn rate in the Rust language:
 
-> Unfortunately, there is *one* thing that makes me anxious about its future: the 6-week development cycles. It’s, I believe, one of the causes of an unhealthy problem: feature bloat. It’s also the cause, in my opinion, of another problem: the immaturity of the ecosystem.
+> Unfortunately, there is _one_ thing that makes me anxious about its future: the 6-week development cycles. It’s, I believe, one of the causes of an unhealthy problem: feature bloat. It’s also the cause, in my opinion, of another problem: the immaturity of the ecosystem.
 
 I share some of these feelings with regards to Swift. On the flip side, seeing a language grow and evolve right before your eyes can be a unique educational experience. I genuinely can’t wait for the concurrency work to land and make all my code obsolete overnight.
 
@@ -93,11 +93,11 @@ Today I open-sourced [Kroma](https://github.com/kaishin/Kroma), a collection of 
 
 Santa came late this year, but he at least made it just in time for my birthday!
 
-[![PlayStation 5](../../assets/images/microblog/image-1610634192211.jpeg "PlayStation 5")](../../assets/images/microblog/image-1610634192211.jpeg)
+[![PlayStation 5](@images/microblog/image-1610634192211.jpeg "PlayStation 5")](@images/microblog/image-1610634192211.jpeg)
 
 <time datetime="2021-01-14T13:34+01:00" class="font-semibold text-2xl" id="jan-14-2021"><a href="#jan-14-2021" class="no-underline">#</a> January 14, 2021</time>
 
-In preparation of the beta launch of one of my yet-to-be-announced projects, I have spent some time devising a plan for server-side caching using Redis. This led me to read about some common caching strategies such as *cache-aside* and *write-through* ([link](https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/)). I was never fluent in backend development jargon, but it’s never late to fix that!
+In preparation of the beta launch of one of my yet-to-be-announced projects, I have spent some time devising a plan for server-side caching using Redis. This led me to read about some common caching strategies such as _cache-aside_ and _write-through_ ([link](https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/)). I was never fluent in backend development jargon, but it’s never late to fix that!
 
 <time datetime="2021-01-13T14:26+01:00" class="font-semibold text-2xl" id="jan-13-2021"><a href="#jan-13-2021" class="no-underline">#</a> January 13, 2021</time>
 
@@ -111,7 +111,7 @@ In software, there is room for specialists, generalists, and everything in betwe
 
 Loren Brichter ([Twitter](https://twitter.com/lorenb)) [shedding some light](https://chromeisbad.com/) on yet another Chrome debacle on macOS:
 
-> Google Chrome installs something called Keystone on your computer, which nefariously hides itself from Activity Monitor and makes your whole computer slow even when Chrome isn't running. 
+> Google Chrome installs something called Keystone on your computer, which nefariously hides itself from Activity Monitor and makes your whole computer slow even when Chrome isn't running.
 
 I still don't understand how people choose to use a piece of software that has consistently [abused their trust](https://redalemeden.com/writing/chrome-no-more/).
 
@@ -131,7 +131,7 @@ The "users won't be able to tell the difference" argument for Electron apps fall
 
 I found [a solution](https://discussions.apple.com/thread/8242927?answerId=32883265022#32883265022) to the problem I posted about [a while ago](/microblog/post-1605383139658). It turns out that clearing input cache using these two commands takes care of restoring things to the way they're supposed to be:
 
-```
+```sh
 sudo rm /System/Library/Caches/com.apple.IntlDataCache*
 sudo rm /var/folders/*/*/*/com.apple.IntlDataCache*
 ```
@@ -154,7 +154,7 @@ I added rerouting the user to the sign in screen when the refresh token expires 
 
 <time datetime="2020-11-02T21:20+01:00" class="font-semibold text-2xl" id="nov-02-2020"><a href="#nov-02-2020" class="no-underline">#</a> November 2, 2020</time>
 
-I worked on a single server-side API endpoint for four hours straight. It involved an OAuth dance with a third party service, a database read _then_ write, and some data validation along the way. I only compiled the code once at the end and fired a request against the new endpoint. Lo and behold, everything worked _exactly_ the way it should. 
+I worked on a single server-side API endpoint for four hours straight. It involved an OAuth dance with a third party service, a database read _then_ write, and some data validation along the way. I only compiled the code once at the end and fired a request against the new endpoint. Lo and behold, everything worked _exactly_ the way it should.
 
 I _love_ using Swift on the server.
 
@@ -190,13 +190,13 @@ As I started work on the next iteration of the site, I realized that I need to r
 
 <time datetime="2020-07-28T14:20:53.056Z" class="font-semibold text-2xl" id="jul-28-2020"><a href="#jul-28-2020" class="no-underline">#</a> July 28, 2020</time>
 
-I enjoyed Chris Krycho’s take [on the idea](https://v5.chriskrycho.com/journal/this-week-i-learned/5/), but I totally understand [where he is coming from](https://v5.chriskrycho.com/journal/this-week-i-learned/ending-for-now/). Like any other commitment, it takes time and energy that might not always be readily available. 
+I enjoyed Chris Krycho’s take [on the idea](https://v5.chriskrycho.com/journal/this-week-i-learned/5/), but I totally understand [where he is coming from](https://v5.chriskrycho.com/journal/this-week-i-learned/ending-for-now/). Like any other commitment, it takes time and energy that might not always be readily available.
 
 After four months of running this experiment, I am starting to feel the pressure. Some weeks go by where I don't learn much worth mentioning, or simply don't have enough time to elaborate. But I remain convinced this is a habit I'd like to keep—if anything, it helps me rebuild confidence in my ability to follow through commitments of this kind.
 
 <time datetime="2020-07-14T15:39:15.195Z" class="font-semibold text-2xl" id="jul-14-2020"><a href="#jul-14-2020" class="no-underline">#</a> July 14, 2020</time>
 
-How come _"a11y"_, the widely used [numeronym](https://en.wikipedia.org/wiki/Numeronym) of the word _accessibility_, is itself not accessible? 
+How come _"a11y"_, the widely used [numeronym](https://en.wikipedia.org/wiki/Numeronym) of the word _accessibility_, is itself not accessible?
 
 Saving key strokes at the expense of readability is the antithesis of what accessibility stands for, in my opinion.
 
@@ -204,7 +204,7 @@ Saving key strokes at the expense of readability is the antithesis of what acces
 
 Shipping a macOS or iOS app nowadays without a setting to match the system appearance is an increasingly harmful accessibility oversight. Discord on macOS is one of the offenders that has been consistently annoying me since [earlier this summer](https://redalemeden.com/microblog/post-1589377531514).
 
-![Discord appearance settings](../../assets/images/microblog/image-1592489667900.png "Discord appearance settings")
+![Discord appearance settings](@images/microblog/image-1592489667900.png "Discord appearance settings")
 
 <time datetime="2020-06-15T15:13:44.214Z" class="font-semibold text-2xl" id="jun-15-2020"><a href="#jun-15-2020" class="no-underline">#</a> June 15, 2020</time>
 
@@ -218,7 +218,7 @@ It is indeed heartwarming to see products like these still exist—and bonus poi
 
 A SwiftUI function grapher in 160 <abbr title="lines of code">LOC</abbr>. The framework might be immature, but it made a lot of my work a tad easier. I will share the source as part of a project I am currently working on, so stay tuned!
 
-![A function grapher in SwiftUI](../../assets/images/microblog/image-1590742233096.png "A function grapher in SwiftUI")
+![A function grapher in SwiftUI](@images/microblog/image-1590742233096.png "A function grapher in SwiftUI")
 
 <time datetime="2020-05-23T20:42:20.395Z" class="font-semibold text-2xl" id="may-23-2020"><a href="#may-23-2020" class="no-underline">#</a> May 23, 2020</time>
 
@@ -232,7 +232,7 @@ As days keep getting longer here in Stockholm, I’ve been relying on the light 
 
 This month I noticed a sudden influx of visitors to the [We Need Chrome No More](https://redalemeden.com/blog/2019/we-need-chrome-no-more) piece form last year—46k page views is way, way above the monthly average hovering around 1k. My self-hosted instance of [Fathom](https://usefathom.com) shows some limited data about top referrers, but none of the numbers make sense, and I am totally fine with that.
 
-[![Website visitors, April 2020.](../../assets/images/microblog/image-1584398929256.png)](../../assets/images/microblog/image-1584398929256.png)
+[![Website visitors, April 2020.](@images/microblog/image-1584398929256.png)](@images/microblog/image-1584398929256.png)
 
 <time datetime="2020-04-25T20:11:12.200Z" class="font-semibold text-2xl" id="apr-25-2020"><a href="#apr-25-2020" class="no-underline">#</a> April 25, 2020</time>
 
@@ -248,7 +248,7 @@ Sincerely,
 
 <time datetime="2020-04-01T14:45+02:00" class="font-semibold text-2xl" id="apr-01-2020"><a href="#apr-01-2020" class="no-underline">#</a> April 1, 2020</time>
 
-[![Product Hunt](../../assets/images/microblog/image-1585322873056.gif)](../../assets/images/microblog/image-1585322873056.gif)
+[![Product Hunt](@images/microblog/image-1585322873056.gif)](@images/microblog/image-1585322873056.gif)
 
 While browsing [Product Hunt](https://www.producthunt.com/) yesterday, I couldn't help but get a strong mid-90s, _GeoCities_-esque, vibe as I scrolled past the animated GIF thumbnails.
 
@@ -302,7 +302,7 @@ The result can be seen [here](https://swiftui.directory). Not only this achieves
 
 <time datetime="2020-02-17T10:53+01:00" class="font-semibold text-2xl" id="feb-17-2020"><a href="#feb-17-2020" class="no-underline">#</a> February 17, 2020</time>
 
-There is a new trend emerging in the ~~design~~ Dribbble community. And some creative souls decided to call it *neumorphism*.
+There is a new trend emerging in the ~~design~~ Dribbble community. And some creative souls decided to call it _neumorphism_.
 
 I have absolutely no qualms with visual experimentation, depth in user interfaces, or the specific effects used in this new trend. But I can't help but feel put off by this incessant, collective infatuation with fads in UI design circles. It's not healthy for anyone caught up in it, especially newcomers who have yet to find their creative footing.
 
@@ -338,20 +338,20 @@ I’ve come to accept that living with this ebb and flow is an integral part of 
 
 Sneak peek of something I've been working on this past couple of weeks.
 
-[![SwiftUI Directory](../../assets/images/microblog/image-1568500250015.png)](../../assets/images/microblog/image-1568500250015.png)
+[![SwiftUI Directory](@images/microblog/image-1568500250015.png)](@images/microblog/image-1568500250015.png)
 
 <time datetime="2019-09-12T22:22+02:00" class="font-semibold text-2xl" id="sep-12-2019"><a href="#sep-12-2019" class="no-underline">#</a> September 12, 2019</time>
 
 Some of my impressions from the [Apple Event from last Tuesday](https://www.apple.com/apple-events/september-2019/):
 
-* The intro video was fun to watch, for once.
-* Tim skipped the numbers update this time around. Good riddance.
-* Apple Arcade is at least 4 years late. I’ll bite, regardless.
-* Apple TV+ is cheaper than I, and many others, had expected.
-* While I got used to the notch, I could get used to not having it. Too bad it’s here to stay another year, at least.
-* Hats off for showing the name of the photographers and artists when showcasing photos and videos.
-* “It’s so pro.”
-* Save for the Watch's always-on feature, the event didn’t quite live up to its title, “By Innovation Only.”
+- The intro video was fun to watch, for once.
+- Tim skipped the numbers update this time around. Good riddance.
+- Apple Arcade is at least 4 years late. I’ll bite, regardless.
+- Apple TV+ is cheaper than I, and many others, had expected.
+- While I got used to the notch, I could get used to not having it. Too bad it’s here to stay another year, at least.
+- Hats off for showing the name of the photographers and artists when showcasing photos and videos.
+- “It’s so pro.”
+- Save for the Watch's always-on feature, the event didn’t quite live up to its title, “By Innovation Only.”
 
 <time datetime="2019-08-11T15:49+02:00" class="font-semibold text-2xl" id="aug-11-2019"><a href="#aug-11-2019" class="no-underline">#</a> August 11, 2019</time>
 
@@ -397,9 +397,9 @@ For more on preference keys and anchors check out this informative [blog](https:
 
 <time datetime="2019-07-28T22:55+02:00" class="font-semibold text-2xl" id="jul-28-2019"><a href="#jul-28-2019" class="no-underline">#</a> July 28, 2019</time>
 
-My Screen Time breakdown for last week. The time I used to spend on Twitter and Mastodon has shifted to reading, writing, and---*ahem*---browsing Reddit.
+My Screen Time breakdown for last week. The time I used to spend on Twitter and Mastodon has shifted to reading, writing, and---_ahem_---browsing Reddit.
 
-[![Screen Time Summary](../../assets/images/microblog/image-1564347307525.jpg)](../../assets/images/microblog/image-1564347307525.jpg)
+[![Screen Time Summary](@images/microblog/image-1564347307525.jpg)](@images/microblog/image-1564347307525.jpg)
 
 <time datetime="2019-07-25T23:35+02:00" class="font-semibold text-2xl" id="jul-25-2019"><a href="#jul-25-2019" class="no-underline">#</a> July 25, 2019</time>
 

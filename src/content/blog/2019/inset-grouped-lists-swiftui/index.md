@@ -14,8 +14,7 @@ As of iOS 13.2, grouped lists will use the inset style when the _horizontal size
 class_ environment value is `.regular`, such is the case with fullscreen scenes
 on iPad.
 
-[![Grouped
-Lists](../../assets/images/microblog/image-1573080693649.png)](../../assets/images/microblog/image-1573080693649.png)
+[![Grouped Lists](@images/microblog/image-1573080693649.png)](@images/microblog/image-1573080693649.png)
 
 If you want to forcibly enable or disable this style, you have to manually set
 the size class environment variable, preferably directly on your list to avoid

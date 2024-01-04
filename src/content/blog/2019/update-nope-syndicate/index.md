@@ -5,10 +5,9 @@ tags:
   - Announcement
 ---
 
-[![Nope & Syndicate](../../assets/images/microblog/image-1569611662504.jpg)](../../assets/images/microblog/image-1569611662504.jpg)
+[![Nope & Syndicate](@images/microblog/image-1569611662504.jpg)](@images/microblog/image-1569611662504.jpg)
 
-Since Safari 13 was released [last
-week](https://developer.apple.com/documentation/safari_release_notes/safari_13_release_notes)
+Since Safari 13 was released [last week](https://developer.apple.com/documentation/safari_release_notes/safari_13_release_notes)
 on macOS, I’ve been getting an unusually high amount of inquiries about the
 status of [Nope](https://redalemeden.com/nope/) and
 [Syndicate](https://redalemeden.com/syndicate/). This is the TL;DR of the

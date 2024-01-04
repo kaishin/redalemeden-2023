@@ -1,5 +1,5 @@
 ---
-pubDate: Sep 06 201Sep 06 20199
+pubDate: Sep 06 2019
 title: "RSS Feed Issues"
 tags:
   - Announcement
