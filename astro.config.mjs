@@ -36,5 +36,6 @@ export default defineConfig({
     "/blog/2021/wwdc-21-day-3-session-notes": "/blog/2021/wwdc-21-session-notes/",
     "/blog/2021/wwdc-21-day-4-5-session-notes": "/blog/2021/wwdc-21-session-notes/",
     "/microblog/[...slug]": "/experiments/microblog",
+    "/work": "/",
   }
 });
