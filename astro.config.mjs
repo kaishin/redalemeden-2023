@@ -15,11 +15,11 @@ export default defineConfig({
     },
   },
   redirects: {
-    "blog/1": "/blog",
-    "blog/2": "/blog",
-    "blog/3": "/blog",
-    "blog/4": "/blog",
-    "blog/5": "/blog",
+    "/blog/1": "/blog",
+    "/blog/2": "/blog",
+    "/blog/3": "/blog",
+    "/blog/4": "/blog",
+    "/blog/5": "/blog",
     "/blog/2020/this-week-i-learned-21": "/experiments/twil",
     "/blog/2020/this-week-i-learned-22": "/experiments/twil",
     "/blog/2020/this-week-i-learned-23": "/experiments/twil",
@@ -37,5 +37,6 @@ export default defineConfig({
     "/blog/2021/wwdc-21-day-4-5-session-notes": "/blog/2021/wwdc-21-session-notes/",
     "/microblog/[...slug]": "/experiments/microblog",
     "/work": "/",
+    "/frequent-typos": "/experiments/frequent-typos",
   }
 });
