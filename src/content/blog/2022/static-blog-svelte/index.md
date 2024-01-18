@@ -1,6 +1,6 @@
 ---
 pubDate: Jan 18 2022
-title: "Making A Static Blog with Svelte: Part 1"
+title: "Making A Static Blog with Svelte"
 audience: "Web and front-end developers or people interested in the topic"
 tags:
   - Guide
@@ -138,11 +138,7 @@ And bam!
 ![About page preview 2](./page-preview-highlight.jpg)
 
 I don’t know about you, but I appreciate having the ability to break the mold,
-so to speak, when I need to.
-
-So far I only managed to get one page to render, but what if I want to render an
-entire folder of markdown posts using a template? That’s what we will look at in
-the next part of this series! Until then, you can find the changes above in this
+so to speak, when I need to. You can find the changes above in this
 [commit](https://github.com/kaishin/svelte-starter/commit/38ceedf4d5c6c0740a3d4479a1f9662bad7fe867).
 
 Stay curious, stay safe!

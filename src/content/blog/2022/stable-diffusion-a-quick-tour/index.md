@@ -1,5 +1,5 @@
 ---
-pubDate: Aug 05 2022
+pubDate: Sep 05 2022
 title: "Stable Diffusion: A Quick Tour"
 audience: "people interested in machine learning or curious about its applications"
 tags:
