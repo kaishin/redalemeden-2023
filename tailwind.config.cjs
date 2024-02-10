@@ -2,7 +2,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
-const maxSideBarWidth = "18rem";
+const maxSideBarWidth = "22rem";
 
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
